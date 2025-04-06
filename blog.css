@@ -375,7 +375,7 @@ body{
     cursor: pointer;
     margin: 10px;
     font-size: 22px;
-    background-image: url("/photo/testImg.jpg");
+    background-image: url("photo/testImg.jpg");
     background-size: cover;
     background-position: center;
     flex-wrap: wrap;
