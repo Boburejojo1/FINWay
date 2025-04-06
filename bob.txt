@@ -1,0 +1,71 @@
+//$(document).ready(function () {
+//    let controller = new ScrollMagic.Controller();
+//    let scene = new ScrollMagic.Scene({
+//        triggerElement: '.h11'
+//    })
+//    .setClassToggle('.h11', 'show') 
+//    .addTo(controller);
+//});
+
+//
+
+    <div class="header">
+        <div class="lefthead">
+            <a href="">Головна</a>
+            <a href="">Про нас</a>
+            <a href="">Контакти</a>
+            <h1></h1>
+        </div>
+        <img src="/photo/Picsart_25-03-05_12-15-33-442.png" alt="">
+        <div class="righthead">
+            <a href="">FAQ</a>
+            <a href="">Блог</a>
+            <a href="">Інструменти</a>
+        </div>
+    </div>
+    <div>
+        
+        <img width="100%" src="/photo/Picsart_25-03-07_23-27-29-222.jpg" alt="">
+    </div>
+
+    //
+
+        body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        background-color: rgb(0, 0, 0);
+        user-select: none;
+    }
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: yellow;
+    height: 150px;
+    box-shadow: 20px 8px 16px rgba(8, 0, 0, 0.208);
+  }
+  .header img{
+    width: 250px;
+  }
+.header a{
+    margin: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    transition: all 0.5s;
+}   
+.lefthead, .righthead {
+    margin: 50px;
+    gap: 20px;
+    
+}
+.header a:hover{
+    transition: all 0.5s;
+    color: rgb(128, 0, 0);
+}

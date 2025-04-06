@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    padding-top: 170px;
+    background-color: rgb(0, 0, 0);
+}
+.up{
+    transform: translateY(-160px);
+}
+/*header*/
+.header{
+    z-index: 21;
+    top: 0;
+    position: fixed;
+    user-select: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+    width: 100%;
+    height: 130px;
+    transition: all 1s ;
+}
+.headerFix{
+    height: 50px;
+    transition: all 1s;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.878);
+    z-index: 21;
+    -webkit-box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.55);
+    box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.55);
+}
+.headerFix .burgerMenu{
+    width: 50px;
+    height: 50px;
+}
+.headerFix .burger div{
+    transition: all 1s;
+    width: 30px;
+    height: 4px;
+}
+
+.headerFix .active .one {
+     transition: 0.5s;
+     transform: translateY(12px) rotate(45deg);
+}
+.headerFix .active .two {
+    transition: 0.3s;
+    opacity:0;
+}
+.headerFix .active .three {
+    transition: 0.5s;
+    transform: translateY(-12px) rotate(-45deg);
+}           
+.headerFix .logo img{
+    transition: 0.4s;
+    width: 200px;
+}
+.headerFix .options a{
+    font-size: 20px;
+}
+.logo{
+    width: 670px;
+}
+.logo img{
+    transition: 0.3s;
+    width: 250px;
+    
+}
+
+.options{
+    gap: 10px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 30px;
+}
+.options a{
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: yellow;
+    font-size:25px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.options a:hover{
+    width: auto;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.197);
+    border: 2px solid rgba(229, 255, 0, 0.459);
+}
+.menu {
+    z-index: 21;
+    border: 2px double yellow;
+    border-radius: 0px 0px 0px 91px;
+    -moz-border-radius: 0px 0px 0px 91px;
+    -webkit-border-radius: 0px 0px 0px 91px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    right: -500px;
+    height: 450px;
+    width: 250px;
+    display: flex;
+    top: 170px;
+    position: fixed;
+    transition: all 1s ;
+    position: fixed;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.825);
+}
+.activemenu{
+    transition: all 1s ;
+    right: 0px;
+}
+.menu a{
+    
+    border: 2px solid transparent;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: yellow;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.menu p{
+    font-size: x-large;
+    color: white;
+}
+.menu a:hover{
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.604);
+    border: 2px solid rgba(229, 255, 0, 0.459);
+}
+
+
+
+.burgerMenu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: 5px solid yellow;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.burger{
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.burger div{
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: yellow;
+    width: 45px;
+    height: 7px;
+}
+.burgerMenu:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+.active .one {
+    transition: 0.5s;
+    transform: translateY(15px) rotate(45deg);
+}
+
+.active .two {
+    transition: 0.3s;
+    opacity:0;
+}
+
+.active .three {
+    transition: 0.5s;
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+/*header це для помітки де хеддер а де футер це не chat gpt*/
+.welcome {
+    user-select: none;
+    width: 100vw;
+    height: 550px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.welcome img {
+    z-index: 1;
+   width: 900px;
+   transform: translateX(-270px);
+}
+
+.welText {
+    font-family: sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    transform: translateX(280px);
+    z-index: 2;
+    padding: 30px;
+    justify-content: center;
+    color: rgb(204, 255, 0);
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+}
+.first{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text1{
+    display: flex;  
+    transition: all 2s;
+    opacity: 0;
+    transform: translateX(500px);
+    transition: opacity 1s ease-out, transform 1s;
+    font-size: x-large;
+    padding: 10px;
+    flex-direction: column;
+    margin: 20px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    box-shadow: 0px 6px 18px 5px yellow;
+    border-radius: 78px 77px 74px 35px;
+    -moz-border-radius: 78px 77px 74px 35px;
+    -webkit-border-radius: 78px 77px 74px 35px;
+    width: 550px;
+    height: 450px;
+}
+.text1 p{
+    text-align: center;
+    width: 500px;
+}
+.first img{
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-120px);
+    width: 600px;
+}
+.showFirst{
+    transition: all;
+}
+.showFirst .text1{
+    transform: translateX(0);
+    transition: all 2s;
+    opacity: 1;
+}
+
+.showFirst img{
+    transform: translateX(-80px);
+    transition: 2s;
+    opacity: 1;
+}
+
+.second{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text2{
+    opacity: 0;
+    transform: translateX(-500px);
+    display: flex;  
+    transition: all 2s;
+    font-size: x-large;
+    padding: 10px;
+    flex-direction: column;
+    margin: 20px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    box-shadow: 0px 6px 18px 5px yellow;
+    border-radius: 76px 74px 33px 76px;
+    -webkit-border-radius: 76px 74px 33px 76px;
+    -moz-border-radius: 76px 74px 33px 76px;
+    width: 580px;
+    height: 450px;
+}
+.text2 h1{
+    font-size: 40px;
+}
+.text2 p{
+    text-align: center;
+    width: 550px;
+}
+.second img{
+    user-select: none;
+    opacity: 0;
+    transform: translateX(120px) translateY(30px);
+    width: 550px;
+}
+
+.showSecond .text2{
+    transition: all 2s;
+    opacity: 1;
+    transform: translateX(0px);
+}
+.showSecond img{
+    transform: translateX(80px) translateY(30px);
+    transition: 2s;
+    opacity: 1;
+}
+
+.third{
+    gap: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.text3{
+    opacity: 0;
+    transform: translateX(500px);
+    transition: all 1s;
+    display: flex;
+    font-size: x-large;
+    padding: 10px;
+    flex-direction: column;
+    margin: 20px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    box-shadow: 0px 6px 18px 5px yellow;
+    border-radius: 78px 77px 74px 35px;
+    -moz-border-radius: 78px 77px 74px 35px;
+    -webkit-border-radius: 78px 77px 74px 35px;
+    width: 580px;
+    height: 450px;
+}
+.text3 p{
+    text-align: center;
+    width: 500px;
+}
+.third img{
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-80px);
+}
+.showthird .text3{
+    transition: 2s all;
+    opacity: 1;
+    transform: translateX(0px);
+}
+.showthird img{
+    transition: 2s;
+    opacity: 1;
+    transform: translateX(0px);
+}
+/*Footer*/
+.footer{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 150px;
+    color: yellow ;
+    gap: 20px;
+    background-color:rgb(0, 17, 2) ;
+    padding: 20px;
+}
+.social .insta{
+    transform: translateY(-3px);
+    width: 55px;
+}
+.rightFoot p{
+    margin: 20px;
+    font-size: 20px;
+}
+.logoFoot{
+    user-select: none;
+    cursor: pointer;
+    width: 300px;
+}
+.leftFoot{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    justify-content: center ;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.instagram{
+    width: 50px;
+}
+.tikTok{
+    transform: translateY(8px);
+    width: 30px;
+
+}
+.telegram{
+    transform: translateY(2px);
+    width: 50px;
+
+}
